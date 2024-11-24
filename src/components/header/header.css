@@ -19,6 +19,17 @@
 .nav__toggle {
     color: var(--title-color);
     font-weight: var(--font-medium);
+    
+}
+
+.nav__logo:hover {
+    background: linear-gradient(90deg, #ff6b6b, #5f27cd);   
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    white-space: nowrap;
+    opacity: 1; /* Default visible */
+    transition: opacity 1s; 
 }
 
 .nav__list {

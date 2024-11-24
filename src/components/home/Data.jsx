@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 
 const Data = () => {
   return (
@@ -55,7 +56,31 @@ const Data = () => {
                   ></path>
             </svg> }
         </h1>
-        <h3 className="home__subtitle">Full Stack Developer</h3>
+        <h3 className="home__subtitle">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .pauseFor(100)  // Small pause before typing starts for a smooth start
+                .typeString('Full Stack Developer')
+                .callFunction(() => {
+                  // Set a delay to hide the cursor after some time
+                  setTimeout(() => {
+                    const cursorElement = document.querySelector('.Typewriter__cursor');
+                    if (cursorElement) {
+                      cursorElement.style.display = 'none'; // Hide cursor after delay
+                    }
+                  }, 1500); // 1000ms = 1 second delay before hiding cursor
+                })
+                .start();
+            }}
+            options={{
+              autoStart: true,
+              loop: false,
+              cursor: "_", // Optionally, you can keep the cursor for smoothness
+              delay: 75, // Set a moderate delay for smoother typing (reduce for faster)
+            }}
+          />
+        </h3>
         <p className="home__description">
             I'm creative full stack developer based in Faridabad, and I'm very passionate to my 
             work.

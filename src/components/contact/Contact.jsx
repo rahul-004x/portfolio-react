@@ -23,6 +23,8 @@ const Contact = () => {
           });
       };
 
+      
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">Get in touch</h2>
@@ -37,7 +39,7 @@ const Contact = () => {
               <i className="contact__card-icon"><MdOutlineMail /></i>
 
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">user@example.com</span>
+              <span className="contact__card-data">rahulxyz123u@gmail.com</span>
 
               <a href="mailto:rahulxyz123u@gmail.com" className="contact__button">
                 Write me <i className="contact__button-icon"><MoveRight size={15} /></i>
@@ -48,7 +50,7 @@ const Contact = () => {
               <i className="contact__card-icon"><IoLogoWhatsapp /></i>
 
               <h3 className="contact__card-title">Whatsapp</h3>
-              <span className="contact__card-data">661-1234676</span>
+              <span className="contact__card-data">9650464302</span>
 
               <a href="https://api.whatsapp.com/send?phone=9650464302&text=Hello, more information!" className="contact__button">
                 Write me <i className="contact__button-icon"><MoveRight size={15} /></i>
